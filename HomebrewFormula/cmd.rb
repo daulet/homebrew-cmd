@@ -25,9 +25,11 @@ class Cmd < Formula
   
     def caveats
       <<~EOS
-        Set the COHERE_API_KEY environment variable to your Cohere API key:
+        Set the COHERE_API_KEY or GROQ_API_KEY environment variable, depending on chosen provider:
   
-        export COHERE_API_KEY="your_api_key"
+        export COHERE_API_KEY="your_cohere_api_key"
+        or
+        export GROQ_API_KEY="your_groq_api_key"
   
         You can add the above line to your shell profile (e.g., ~/.bashrc, ~/.zshrc, or ~/.bash_profile) to have the variable automatically set in new shell sessions.
       EOS
