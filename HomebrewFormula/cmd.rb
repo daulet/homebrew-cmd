@@ -1,14 +1,14 @@
 class Cmd < Formula
     desc "A CLI for Cohere models"
     homepage "https://github.com/daulet/cmd"
-    version "0.3.4"
+    version "0.4.0"
   
     if Hardware::CPU.intel?
       url "https://github.com/daulet/cmd/releases/download/v#{version}/cmd-darwin-amd64"
-      sha256 "4e54220ac79e04b248fa92666bd9e46c283dda98b3ab80ffd1ae6136f853230a"
+      sha256 "d12f33dac217a49a04354618e89ede1e9fd010ffd0b55175b71515dd61647688"
     elsif Hardware::CPU.arm?
       url "https://github.com/daulet/cmd/releases/download/v#{version}/cmd-darwin-arm64"
-      sha256 "5fb33ddbac634b3e1fbd293a8257747902db3835d3a9b4861ab4a80f19645890"
+      sha256 "0184c2fc472993c12e0b1c1c7203d13808246aefe6c33044016ccf45eee51917"
     end
   
     def install
